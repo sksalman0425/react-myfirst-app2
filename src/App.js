@@ -46,7 +46,24 @@
 
 //   )
 // }
-import Avatar from "./Avatar";
+
+// import "./App.css";
+// import Profile from "./Profile";
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <h1>Amazing scientist</h1>
+//         <Profile />
+//         <Profile />
+//         <Profile />
+//       </header>
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import AvatarProfile from "./AvatarProfile";
 import './App.css';
 function App() {
@@ -71,7 +88,7 @@ function App() {
           imageId: "OKS67lh",
         }}
       />
-      
+
   </header>
     </div>
   );

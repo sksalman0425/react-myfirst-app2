@@ -4,6 +4,7 @@ export default function AvatarProfile(props) {
   return (
     <>
       <Avatar {...props} />
+    
     </>
   );
 }

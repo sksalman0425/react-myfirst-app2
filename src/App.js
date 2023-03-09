@@ -66,13 +66,22 @@
 
 import AvatarProfile from "./AvatarProfile";
 import './App.css';
+import { useEffect, useState } from "react";
 function App() {
+  const [changeSize,SetChangeSize]=useState(50);
+  useEffect(()=>{
+    setTimeout(()=>{
+      SetChangeSize(300)
+    },7000)
+  },[]);
+  //props are immutable but we can change state of parent component after 7 second which is given to props,
+  //so in that way props value can change and your component will re-render automatically.
   return (
     <div className="App">
     <header className="App-header">
       <h1>Amazing scientists</h1>
       <AvatarProfile
-        size={100}
+        size={changeSize}//here props value through parent state is changing after 7 second.
         person={{ name: "xyz", imageId: "1bX5QH6" }}
       />
       <AvatarProfile
